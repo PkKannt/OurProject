@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu">
+
+    <ImageView
+        android:id="@+id/ImageDanhSach"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/icon3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="DANH SÁCH"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ImageDanhSach"
+        app:layout_constraintStart_toStartOf="@+id/ImageDanhSach"
+        app:layout_constraintTop_toBottomOf="@+id/ImageDanhSach" />
+
+    <ImageView
+        android:id="@+id/ImageInsert"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/iconinsert"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageDanhSach"
+        app:layout_constraintEnd_toStartOf="@+id/imageDelete"
+        app:layout_constraintStart_toEndOf="@+id/ImageDanhSach"
+        app:layout_constraintTop_toTopOf="@+id/ImageDanhSach" />
+
+    <TextView
+        android:id="@+id/testInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="THÊM"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ImageInsert"
+        app:layout_constraintStart_toStartOf="@+id/ImageInsert"
+        app:layout_constraintTop_toBottomOf="@+id/ImageInsert" />
+
+    <ImageView
+        android:id="@+id/imageDelete"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/icondelete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="XOÁ"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageDelete"
+        app:layout_constraintStart_toStartOf="@+id/imageDelete"
+        app:layout_constraintTop_toBottomOf="@+id/imageDelete" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="550dp"
+        android:text="QUAY LẠI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="550dp"
+        android:text="THOÁT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
